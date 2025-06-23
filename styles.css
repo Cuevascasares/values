@@ -1,0 +1,71 @@
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #666666; /* Gris claro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000050;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    min-height: 120px;
+}
+
+.image {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+.info {
+    flex: 1;
+}
+
+    .info h2 {
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+    }
+
+.color-ancient {
+    color: #7358ff;
+}
+
+.color-godly {
+    color: #e45aff;
+}
+
+.color-unique {
+    color: #ffbb00;
+}
+
+
+    .info p {
+        font-size: 0.7rem;
+        margin: 2px 0;
+        line-height: 1.2;
+    }
