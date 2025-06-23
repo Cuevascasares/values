@@ -2,7 +2,7 @@
 body {
   background-color: #0f0f0f;
   color: white;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -38,10 +38,10 @@ header h1 {
 
 /* Card individual */
 .card {
-  background-color: #1a1a1a;
-  border: 1px solid #ccc;
+  background-color: #181818;
+  border: 1px solid #222;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00000050;
+  box-shadow: 0 0 20px #000000a0;
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -106,9 +106,21 @@ header h1 {
 }
 
 /* Colores personalizables para títulos */
-.color-blue { color: #59b4ff; }
-.color-green { color: #4caf50; }
-.color-orange { color: #ffa500; }
-.color-purple { color: #b388ff; }
-.color-red { color: #f44336; }
-.color-yellow { color: #ffeb3b; }
+.color-blue {
+  color: #59b4ff;
+}
+.color-green {
+  color: #4caf50;
+}
+.color-orange {
+  color: #ffa500;
+}
+.color-purple {
+  color: #b388ff;
+}
+.color-red {
+  color: #f44336;
+}
+.color-yellow {
+  color: #ffeb3b;
+}
