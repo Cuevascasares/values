@@ -58,7 +58,6 @@ cards.forEach((card) => {
   <strong>Demand:</strong> 7&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;<strong>Rarity:</strong> 4
 </p>
       <p><strong>Origin:</strong> ${card.origin}</p>
-      <p><strong>Last Change:</strong> ${card.change}</p>
     </div>
   `;
 
