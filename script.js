@@ -1,6 +1,6 @@
 const cards = [
   {
-    title: "Traveler's Gun",
+    title: "Traveler's Axe",
     value: "3,700",
     demand: 7,
     rarity: 4,
@@ -8,10 +8,10 @@ const cards = [
     origin: "Hallows 2023 (Unboxed)",
     change: "-100",
     color: "color-blue",
-    image: "TEMPLATE"
+    image: "travaxe"
   },
   {
-    title: "Shadow Knife",
+    title: "Traveler's Gun",
     value: "5,200",
     demand: 8,
     rarity: 5,
@@ -19,10 +19,10 @@ const cards = [
     origin: "Halloween 2022 (Pack)",
     change: "+300",
     color: "color-purple",
-    image: "TEMPLATE"
+    image: "travgun"
   },
   {
-    title: "Shadow Knife",
+    title: "Harvester",
     value: "5,200",
     demand: 8,
     rarity: 5,
@@ -30,19 +30,8 @@ const cards = [
     origin: "Halloween 2022 (Pack)",
     change: "+300",
     color: "color-purple",
-    image: "TEMPLATE"
+    image: "harv"
   },
-  {
-    title: "Shadow Knife",
-    value: "5,200",
-    demand: 8,
-    rarity: 5,
-    stability: "Rising",
-    origin: "Halloween 2022 (Pack)",
-    change: "+300",
-    color: "color-purple",
-    image: "TEMPLATE"
-  }
 ];
 
 const container = document.getElementById("card-container");
