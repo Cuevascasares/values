@@ -1,0 +1,75 @@
+const cards = [
+  {
+    title: "Traveler's Gun",
+    value: "3,700",
+    demand: 7,
+    rarity: 4,
+    stability: "Stable",
+    origin: "Hallows 2023 (Unboxed)",
+    change: "-100",
+    color: "color-blue",
+    image: "TEMPLATE"
+  },
+  {
+    title: "Shadow Knife",
+    value: "5,200",
+    demand: 8,
+    rarity: 5,
+    stability: "Rising",
+    origin: "Halloween 2022 (Pack)",
+    change: "+300",
+    color: "color-purple",
+    image: "TEMPLATE"
+  },
+  {
+    title: "Shadow Knife",
+    value: "5,200",
+    demand: 8,
+    rarity: 5,
+    stability: "Rising",
+    origin: "Halloween 2022 (Pack)",
+    change: "+300",
+    color: "color-purple",
+    image: "TEMPLATE"
+  },
+  {
+    title: "Shadow Knife",
+    value: "5,200",
+    demand: 8,
+    rarity: 5,
+    stability: "Rising",
+    origin: "Halloween 2022 (Pack)",
+    change: "+300",
+    color: "color-purple",
+    image: "TEMPLATE"
+  }
+];
+
+const container = document.getElementById("card-container");
+
+cards.forEach((card) => {
+  const cardElement = document.createElement("div");
+  cardElement.classList.add("card");
+
+  cardElement.innerHTML = `
+    <div class="image">
+      <img src="${card.image}" alt="${card.title}" />
+    </div>
+    <div class="info">
+      <div class="title-row">
+        <h2 class="${card.color}">${card.title}</h2>
+        <span class="value">${card.value}</span>
+      </div>
+      <p><strong>Stability:</strong> ${card.stability}</p>
+      <p class="demand-rarity">
+  <strong>Demand:</strong> 7&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;<strong>Rarity:</strong> 4
+</p>
+
+
+      <p><strong>Origin:</strong> ${card.origin}</p>
+      <p><strong>Last Change:</strong> ${card.change}</p>
+    </div>
+  `;
+
+  container.appendChild(cardElement);
+});
