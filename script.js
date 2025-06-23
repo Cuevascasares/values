@@ -5,7 +5,7 @@ const cards = [
     demand: 7,
     rarity: 4,
     stability: "Stable",
-    origin: "Hallows 2023 (Unboxed)",
+    origin: "Hallows 2023 (Pass)",
     change: "-100",
     color: "color-blue",
     image: "travaxe"
@@ -16,13 +16,13 @@ const cards = [
     demand: 8,
     rarity: 5,
     stability: "Rising",
-    origin: "Halloween 2022 (Pack)",
+    origin: "Halloween 2023 (Unboxed)",
     change: "+300",
     color: "color-purple",
     image: "travgun"
   },
   {
-    title: "Harvester",
+    title: "Shadow Knife",
     value: "5,200",
     demand: 8,
     rarity: 5,
@@ -30,8 +30,19 @@ const cards = [
     origin: "Halloween 2022 (Pack)",
     change: "+300",
     color: "color-purple",
-    image: "harv"
+    image: "TEMPLATE"
   },
+  {
+    title: "Harvester",
+    value: "5,200",
+    demand: 8,
+    rarity: 5,
+    stability: "Rising",
+    origin: "Halloween 2022 (Pass)",
+    change: "+300",
+    color: "color-purple",
+    image: "harv"
+  }
 ];
 
 const container = document.getElementById("card-container");
@@ -46,7 +57,7 @@ cards.forEach((card) => {
     </div>
     <div class="info">
       <div class="title-row">
-        <h2 class="${card.color}">${card.title}</h2>
+        <h2 class="text-white">${card.title}</h2>
         <span class="value">${card.value}</span>
       </div>
       <p><strong>Stability:</strong> ${card.stability}</p>
