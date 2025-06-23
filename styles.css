@@ -1,71 +1,114 @@
+/* Fuente y configuración global */
 body {
-    background-color: #0f0f0f;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    font-family: 'Nunito', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
+/* Título principal */
+header {
+  margin: 40px 0 20px 0;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Grid de cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px 40px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Card individual */
 .card {
-    background-color: #1a1a1a;
-    border: 1px solid #666666; /* Gris claro */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #00000050;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    min-height: 120px;
+  background-color: #1a1a1a;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000050;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  text-align: left;
+  aspect-ratio: 3 / 1;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
 }
 
+/* Imagen cuadrada */
 .image {
-    width: 120px;
-    aspect-ratio: 1 / 1;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
+  width: 100px;
+  margin-right: 10px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
 }
 
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-    .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
+/* Contenido de la card */
 .info {
-    flex: 1;
+  flex: 1;
 }
 
-    .info h2 {
-        font-size: 1rem;
-        margin: 0 0 5px 0;
-    }
-
-.color-ancient {
-    color: #7358ff;
+/* Fila de título y valor alineados */
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
 }
 
-.color-godly {
-    color: #e45aff;
+.title-row h2 {
+  font-size: 1.2rem;
+  margin: 0;
 }
 
-.color-unique {
-    color: #ffbb00;
+.value {
+  font-size: 0.9rem;
+  color: #ddd;
+  font-weight: bold;
 }
 
+/* Texto de la información */
+.info p {
+  font-size: 0.8rem;
+  margin: 2px 0;
+  line-height: 1.3;
+}
 
-    .info p {
-        font-size: 0.7rem;
-        margin: 2px 0;
-        line-height: 1.2;
-    }
+.demand-rarity {
+  font-size: 0.8rem;
+  margin: 2px 0;
+}
+
+/* Colores personalizables para títulos */
+.color-blue { color: #59b4ff; }
+.color-green { color: #4caf50; }
+.color-orange { color: #ffa500; }
+.color-purple { color: #b388ff; }
+.color-red { color: #f44336; }
+.color-yellow { color: #ffeb3b; }
